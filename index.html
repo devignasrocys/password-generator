@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./main.css">
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+
+  <div class="container">
+    <p>Password Generator</p>
+    <div class="password-container">
+      <p id="generated-password">jsadkg </p>
+    </div>
+    <form class="form">
+      <label for="range">
+        <span class="inline-container">
+          <p>Character Length <span id="character_length">10</span></p>
+        </span>
+        <input type="range" name="range" min="0" max="20" id="range-bar">
+      </label>
+      <label for="uppercase">
+        <input type="checkbox" name="Uppercase" id="uppercase">
+        Include Uppercase Letters
+      </label>
+      <label for="lowercase">
+        <input type="checkbox" name="Lowercase" id="lowercase">
+        Include Lowercase Letters
+      </label>
+      <label for="numbers">
+        <input type="checkbox" name="Numbers" id="numbers">
+        Include Numbers
+      </label>
+      <label for="symbols">
+        <input type="checkbox" name="Symbols" id="symbols">
+        Include Symbols
+      </label>
+      <div class="strength-container">
+        <span class="column">STRENGTH</span>
+        <span class="column" id="strengthness">
+          MEDIUM
+        </span>
+          <cell class=""></cell>
+          <cell class=""></cell>
+          <cell class=""></cell>
+          <cell class=""></cell>
+        </span>
+      </div>
+      <button class="button" id="btn">GENERATE</button>
+    </form>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
